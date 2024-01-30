@@ -1,3 +1,32 @@
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 900;
+  src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2");
+}
+
 :root {
   --color-prymary-dark: #31261a;
   --color-prymary-blond: #faf4ea;
@@ -7,6 +36,14 @@
 
 body {
   color: var(--color-prymary-dark);
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+address {
+  font-style: normal;
 }
 
 ul {
@@ -19,6 +56,7 @@ ul {
   border: 2px solid var(--color-brand-blond);
   background-color: var(--color-brand-blond);
   cursor: pointer;
+  font-weight: 600;
 }
 
 .button:hover {
@@ -28,14 +66,20 @@ ul {
 
 .link {
   color: var(--color-prymary-blond);
+  text-decoration: none;
+  line-height: 1.5;
 }
 
 .link:hover {
   color: var(--color-brand-blond);
+  font-weight: 600;
 }
 
 .hero-title {
   color: var(--color-prymary-blond);
+  text-align: center;
+  font-size: 128px;
+  font-weight: 900;
 }
 
 .hero-title .accent {
@@ -47,6 +91,55 @@ ul {
   background-color: var(--color-brand-blond);
 }
 
+.advantages-item {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
 .section-title .accent {
   color: var(--color-brand-dark);
+}
+
+.traditions-text .brand {
+  color: var(--color-brand-blond);
+  font-weight: 600;
+}
+
+.traditions-text .uppercase {
+  text-transform: uppercase;
+}
+
+.chef-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.format-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.format-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.address-link {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-prymary-blond);
+  text-decoration: none;
+}
+
+.address-link:hover {
+  color: var(--color-brand-blond);
+}
+.address-copyright {
+  font-size: 14px;
 }
